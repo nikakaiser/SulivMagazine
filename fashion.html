@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Suliv</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.typekit.net/dqj5jtb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="suliv-logo" src="images/suliv-logo-black-03.png" alt="suliv logo">
+        </a>    
+    <nav><ol>
+        <li><a href="fashion.html"><h3>fashion</h3></a></li>
+        <li><div class="navitems"><a href="#"><h3>beauty</h3></a>
+                <span class="navtooltip"> coming soon</span>
+            </div></li>
+        <li><div class="navitems"><a href="#"><h3>lifestyle</h3></a>
+                <span class="navtooltip"> coming soon</span>
+            </div></li>
+        <li><a href="about.html"><h3>about</h3></a></li>
+    </ol></nav>
+    </header>
+
+    <div id="contents">
+        <div id="contentsheader">
+            <h4>Contents</h4>
+        </div>
+            <div id="glossarypolaroid">
+                <a href="glossary.html"><img id="glossary-polaroid" src="images/polaroid-glossary.png" alt="polaroid with sustainable fashion glossary written underneath"></a>
+            </div>
+            <div id="content 2">
+                <a href="articles.html"><img id="ethics-polaroid" src="images/polaroid-ethicsoffashion.png" alt="polaroid with ethicd of fashion during climate change written underneath"></a>
+            </div>
+            <div id="content 3">
+                <a href="editorials.html"><img id="brands-polaroid" src="images/polaroid-fivebrands.png" alt="polaroid with five ethical and sustainable brands written underneath"></a>
+            </div>
+            <div id="content 4">
+                <a href="diy.html"><img id="diy-polaroid" src="images/polaroid-diyrefresh.png" alt="polaroid with diy closet refresh written underneath"></a>
+            </div>
+    </div>
+
+    <div id="editorspicks">
+            <div id="editorheader">
+                <h4>Our Instagram Picks</h4>
+            </div>
+            <div id="pick1">
+                <img id="hester" src="images/hester-beret.jpg" alt="Beret by Hester Sunshine">
+                @sunshinebyhester
+            </div>
+            <div id="pick2">
+                <img id="chunks" src="images/chunksshop.jpg" alt="Barrettes by Chunks Shop">
+                @chunks.shop
+            </div>
+            <div id="pick3">
+                <img id="fashionbrand" src="images/fashionbrandcompany.png" alt="Teeth Sunglasses by Fashion Brand Company">
+                @fashionbrandcompany    
+            </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script>
+    var tooltip = document.querySelectorAll('.navtooltip');
+
+    document.addEventListener('mousemove', fn, false);
+
+    function fn(e) {
+        for (var i=tooltip.length; i--;) {
+            tooltip[i].style.left = e.pageX + 'px';
+            tooltip[i].style.top = e.pageY + 'px';
+        }
+    }
+
+    $('.glossarypolaroid').hover(function(){
+	          $('.glossarypolaroid').toggleClass('kermywiggle')
+	        })
+</script>

@@ -1,0 +1,225 @@
+body {
+    font-family: proxima-nova, sans-serif;
+    cursor: url(../images/flower-cursor-copy.png), auto;
+}
+a {
+    cursor: url(..images/flower-cursor.png), auto;
+}
+img {
+    width: 100%;
+}
+h1, h3, h4 {
+    font-family: monotalic, sans-serif; 
+    color: black;
+}
+h1{
+    font-weight: 300;
+    font-size: 30pt;
+    text-align: center;
+}
+h2 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18pt;
+}
+h4 {
+    font-size: 20pt;
+    text-align: center;
+}
+h5 {
+    font-family: Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: center;
+}
+p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+header { 
+    margin: 50px;
+}
+#suliv-logo {
+    z-index: 100;
+    width: 20%;
+}
+nav {
+    z-index: 100;
+    overflow: hidden;
+    margin-top: -130px;
+    margin-bottom: 100px;
+  }
+  nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100px;
+  }
+  nav a:hover {
+    font-weight: bold;
+    color: black;
+  }
+
+.homepage {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#contents {
+    margin: 50px;
+    margin-top: 100px;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-row-gap: 20px;
+}
+#contents img {
+    width: 90%;
+}
+#contentsheader {
+    grid-column-end: span 4;
+}
+#contents a:hover img{
+    transform: rotate(-10deg);
+    transition: all .5s;
+}
+
+#editorspicks {
+    margin: 50px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;;
+}
+#editorheader {
+    grid-column-end: span 3;
+}
+
+#glossary-grid {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 50px;
+}
+#glossary-grid h2 {
+    margin-bottom: 10px;;
+}
+#glossary-grid p {
+    width: 30em;
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+.about-section {
+    margin: 100px;
+}
+
+.navitems:hover .navtooltip {
+    display: block;
+}
+.navtooltip {
+    display: none;
+ 
+    margin-left: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    
+    height:100px;
+}
+
+.kermywiggle {
+	animation-name: wiggle;
+	animation-duration: 3s;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 200px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+article h1 {
+    grid-column-end: span 4;
+}
+article img {
+    grid-column-end: span 4;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+article p {
+    width: 36em;
+    max-width: 100%;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 20px;
+    grid-column: 2/4;
+}
+article h5 {
+    margin-top: 50px;
+    grid-column: 2/4;
+}
+#hazy {
+    grid-column: 1/3;
+    width: 70%;
+    padding-left: 25%;
+}
+#girlpile {
+    grid-column: 3/5;
+    width: 70%;
+    padding-right: 25%;
+}
+
+
+.diy-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 10% 30% 60%;
+    margin: 50px;
+    margin-top: 100px;
+}
+.diy-content #diy-header {
+    margin-bottom: 25px;
+    grid-column-end: span 3;
+}
+.diy-content #supplies {
+    grid-column-end: span 2;
+}
+.diy-content #diy-jeans {
+    grid-row-end: span 2;
+}
+
+
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+    grid-row-gap: 25px;;
+}
+.brands-grid #header {
+    margin-bottom: 50px;
+    grid-column-end: span 4;
+}
+.brands-grid a:hover img{
+    transform: scale(1.5);
+    transition: all .5s;
+}
+#brandblurb-right {
+    line-height: 1.25;
+    padding-left: 25px;
+}
+#brandblurb-left {
+    padding-right: 25px;
+    line-height: 1.25;
+}

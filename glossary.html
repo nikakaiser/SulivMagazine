@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Glossary</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.typekit.net/dqj5jtb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="suliv-logo" src="images/suliv-logo-black-03.png" alt="suliv logo">
+        </a>
+        <nav><ol>
+            <li><a href="fashion.html"><h3>fashion</h3></a></li>
+            <li><div class="navitems"><a href="#"><h3>beauty</h3></a>
+                    <span class="navtooltip"> coming soon</span>
+                </div></li>
+            <li><div class="navitems"><a href="#"><h3>lifestyle</h3></a>
+                    <span class="navtooltip"> coming soon</span>
+                </div></li>
+            <li><a href="about.html"><h3>about</h3></a></li>
+        </ol></nav>
+    </header>
+
+    <h1>Sustainable Fashion Glossary</h1>
+
+    <div id="glossary-grid">
+        <div id="word 1">
+            <h2>Fast Fashion</h2>
+            <p>Fast fashion is the approach to designing,
+            creating, and producing products based
+            on fast moving trends and cheap prices
+            (such as H&M and Zara). These brands
+            have perfected bringing runway knockoffs
+            to stores at affordable prices. While cheap
+            and trendy, fast fashion is dangerous
+            because it results in overproduction,
+            waste, environmental degradation, and the
+            overworking of factory makers.</p>
+        </div>
+        <div id="word 2">
+            <h2>Slow Fashion</h2>
+            <p>Slow fashion is the opposite of fast fashion, a
+            deliberate choice from consumers to slow down
+            their consumption, and buy less, while investing in
+            high quality pieces that last longer. It is the ethos of
+            “buying fewer better things”, embracing individual
+            style rather than chasing trends.</p>
+        </div>
+        <div id="word 3">
+            <h2>Sustainable Fashion</h2>
+            <p>This term usually means eco-friendly practices in the fashion
+                industry, referencing the approach of designing, producing and
+                consuming clothes that respect the planet by causing little to no
+                damage, and therefore sustaining the environment. It also refers to
+                the practice of recycling and reusing the product to extend its life.</p>
+        </div>
+        <div id="word 4">
+            <h2>Ethical</h2>
+            <p>The term ‘ethical’ usually refers to the people aspect of the manufacturing
+                process. Many fashion brands simply define ethical production as adhering
+                to local labor laws. Sometines, this is not good enough because our clothes
+                are often made in places where labor laws are weak and enforcement is even
+                weaker. Instead of asking, “Is this product doing no harm to the people who
+                made it,” reframe the question to ask, “Is this product leaving the people who
+                make it better off?”. Ethical means brands committed to treating their makers
+                with fairness, respect, and care.</p>
+        </div>
+        <div id="word 5">
+            <h2>Organic</h2>
+            <p>Organic products are those produced
+                without the use of chemical fertilizers,
+                pesticides, or other artificial chemicals.
+                The term ‘organic’ generally has a
+                positive context, but just because a
+                product is organic does not make it
+                ethical. For example organic cotton
+                could have still be picked by a child.
+                Organic also doesn’t account for added
+                toxins (such as dyes) that maybe used
+                later in the production process, that has
+                negative health impacts on both makers
+                and consumers.</p>
+        </div>
+        <div id="word 6">
+            <h2>Fair Trade</h2>
+            <p>According to Fairtrade International, the Fairtrade Standards are designed to address the
+                imbalance of power and injustices in trading relationships. Fair Trade provides an alternative
+                to conventional trade, with fair trade products charging a premium to consumers so that
+                producers (such as farmers) can earn a better living. While fair trade is a step in the right
+                direction, it is not the same as living wages, which is what people would need to make
+                to actually live with dignity. Moreover fair trade in fashion is more complicated than food
+                because the fashion supply chain is more fragmented. For example the cotton in a fashion
+                product maybe fair trade, but the factories where the clothes are cut and stitched may not.
+                Gets confusing pretty quickly right?</p>
+        </div>
+        <div id="word 7">
+            <h2>Living Wage</h2>
+            <p>A living wage is a fair salary or
+                compensation that allows makers
+                to make a decent salary and not
+                remain trapped in poverty. The
+                Asia Floor Wage calculates living
+                wages based on some common
+                factors including: the number of
+                family members being supported,
+                the nutritional needs of a maker
+                and their dependents, and their
+                other basic needs including
+                housing and education.</p>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    var tooltip = document.querySelectorAll('.navtooltip');
+
+    document.addEventListener('mousemove', fn, false);
+
+    function fn(e) {
+        for (var i=tooltip.length; i--;) {
+            tooltip[i].style.left = e.pageX + 'px';
+            tooltip[i].style.top = e.pageY + 'px';
+        }
+    }
+</script>
